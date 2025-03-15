@@ -36,16 +36,27 @@ If you are an administrator, access admin.php to manage products and orders.
 Project Structure
 
 /Web-Site-with-Authentication
+
 ├── css (Website styles)
+
 ├── js (JavaScript scripts)
+
 ├── register.html (Registration page)
+
 ├── index.php (Main page)
+
 ├── login.php (Login page)
+
 ├── admin.php (Admin page)
+
 ├── products.php (Products page)
+
 ├── users.txt (Text file to store users)
+
 ├── t-shirt (Project images)
+
 ├── prodott (Project images)
+
 └── config.php (Basic configuration)
 
 Contributions
