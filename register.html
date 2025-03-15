@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrati</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="welcome">
+            <h1>Benvenuto nel nostro E-commerce</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="products.php">Prodotti</a></li>
+                <li><a href="cart.php">Carrello</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <form action="search_results.html" method="get" class="search-bar">
+                <input type="text" name="query" placeholder="Cerca prodotti...">
+                <button type="submit">Cerca</button>
+            </form>
+        </div>
+    </header>
+    
+   <!-- <div class="register-now">
+        <p>Registrati ora!</p>
+    </div> -->
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Crea un nuovo account</h2>
+            <form action="php/register.php" method="post">
+                <div class="input-group">
+                    <label for="new_username">Username:</label>
+                    <input type="text" id="new_username" name="new_username" required>
+                </div>
+                <div class="input-group">
+                    <label for="new_password">Password:</label>
+                    <input type="password" id="new_password" name="new_password" required>
+                </div>
+                <div class="input-group">
+                    <label for="password_confirm">Conferma Password:</label>
+                    <input type="password" id="password_confirm" name="password_confirm" required>
+                </div>
+                <button type="submit" class="btn">Registrati</button>
+            </form>
+            <p>Hai già un account? <a href="login.php">Accedi</a></p>
+        </div>
+    </div>
+    <script>
+        function passwordConfirm(){
+            var password = document.getElementById('new_password');
+            var password_confirm = 
+        }
+    </script>
+</body>
+</html>
