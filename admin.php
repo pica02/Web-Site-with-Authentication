@@ -19,6 +19,14 @@
             <li><a href="cart.php">Carrello</a></li>
         </ul>
     </nav>
+
+    <label for="product_category">Categoria:</label>
+      <select id="product_category" name="product_category">
+        <option value="elettronica">Elettronica</option>
+        <option value="abbigliamento">Abbigliamento</option>
+        <option value="cibo">Cibo</option>
+      </select>
+
     <div class="search-bar">
         <form action="search_results.html" method="get" class="search-bar">
             <input type="text" name="query" placeholder="Cerca prodotti...">
@@ -58,6 +66,13 @@
         </div>
 
 
+        <label for='currency'>Valuta</label>
+          <select id='currency' onchange='updateCurrency()>
+              <option value='$'></option>
+              <option value='£'></option>
+          </select>
+
+
         <script>
             // Aggiungi event listener agli input per aggiornare l'anteprima in tempo reale
 document.getElementById('product_name').addEventListener('input', updatePreview);
@@ -88,7 +103,13 @@ function updateImagePreview() {
         document.getElementById('product-image-preview').src = '';
         document.getElementById('product-image-preview').style.display = 'none';
     }
-}
+   }
+
+            function updateCurrency(){
+                const currency = document.getElementById('currency');
+                const price = document.getElementById('product_price');
+                document.getElementById('product-price-preview').textContent = 'Prezzo: ${currency}.{parseFloat(price).toFixed(2)}' : 'Prezzo ${currency} 0.00'
+            }
         </script>
         
 
